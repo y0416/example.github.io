@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./fonts/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/music.css">
+</head>
+<body>
+    <div class="app-wrap">
+        <div class="bg"></div>
+        <div class="bg-mask"></div>
+
+        <main class="player-root">
+            <section class="left-panel">
+                <div class="record">
+                    <div class="disc">
+                        <div class="disc-center">
+                            <img src="images/cover/좋아 (JOAH) (喜欢) (Re-Mastered)_H.jpg" alt="cover" class="cover-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="right-panel">
+                <div class="track-header">
+                    <h1 class="track-title"></h1>
+                    <div class="track-artist"></div>
+                </div>
+
+                <div class="lyrics-panel" id="lyrics-panel">
+                    <!-- 歌词区域留空，使用者可自行填充 -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="player-footer">
+            <div class="controls">
+                <button class="btn btn-prev"><i class="fa fa-step-backward"></i></button>
+                <button class="btn btn-play play-pause"><i class="fa fa-play"></i></button>
+                <button class="btn btn-next"><i class="fa fa-step-forward"></i></button>
+            </div>
+            <div class="progress">
+                <div class="time current-time">00:00</div>
+                <div class="progress-track">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="time total-time">03:50</div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
